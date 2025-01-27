@@ -31,6 +31,6 @@ def organize_data(source_dir, target_dir, train_ratio=0.8):
 
     print(f"Data organized into {train_dir} and {val_dir}.")
 
-source_directory = r'C:\Users\saira\Downloads\Lang\IMG'
-target_directory = r'C:\Users\saira\Downloads\Lang'
+source_directory = r'your training data directory'
+target_directory = r'Your preference'
 organize_data(source_directory, target_directory)
