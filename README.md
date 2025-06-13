@@ -32,32 +32,26 @@ image_classifier/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/image_classifier.git
+https://github.com/Sairaj213/Expert-System_Image-Classifier.git
 cd image_classifier
 ```
 
 ### 2. Create and Organize Your Data
 Create a `data/` directory and subdirectories for each image category (e.g., `data/people`, `data/landscape`, etc.). Place your images into the corresponding folders.
 
-### 3. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
-Ensure `requirements.txt` includes necessary libraries such as `torch`, `torchvision`, `Pillow`, `scikit-learn`, and `streamlit`.
-
-### 4. Data Preparation
+### 3. Data Preparation
 Run `data_preparation.py` to preprocess and split your data into training, validation, and test sets.
 ```bash
 python data_preparation.py --data_dir data/  # Adjust data_dir if needed
 ```
 
-### 5. Model Training
+### 4. Model Training
 Train the model using `model_training.py`. This script loads the preprocessed data, fine-tunes a ResNet18 model, and saves the trained model.
 ```bash
 python model_training.py --num_classes <number_of_classes> --device <cpu or cuda>  # Replace placeholders accordingly
 ```
 
-### 6. Streamlit App (For Folder/Multiple Image Classification)
+### 5. Streamlit App (For Folder/Multiple Image Classification)
 Run the Streamlit app to classify images from a folder or upload individual images.
 ```bash
 streamlit run app.py
